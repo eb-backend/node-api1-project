@@ -1,9 +1,11 @@
 const words= "some words of encouragement"
 
 let users =[
-    {id: "1", name:"Jane Doe"}, 
-    {id: "2", name:" KYLE XY"},
-    {id: "3", name:"Hnery clarke"}
+{
+  id: "1", // hint: use the shortid npm package to generate it
+  name: "Jane Doe", // String, required
+  bio: "Not Tarzan's Wife, another Jane",  // String, required
+}
 ]
 
 function getusers(){
@@ -37,6 +39,7 @@ function updateUser(id, data){
 
 function deleteUser(id){
     users=users.filter(u=>u.id != id)
+    return users
 }
 
 
