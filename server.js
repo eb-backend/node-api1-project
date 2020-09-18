@@ -8,6 +8,8 @@ const server= express() //adds routing, allows for json format
 
 //* middleware to help us parse JSON request body
 server.use(express.json())
+//*cors middleware
+server.use(cors())
 
 //routing
 server.get("/", (req,res)=>{
