@@ -46,11 +46,13 @@ server.post("/api/users", (req,res)=>{
     const post = req.body
     const {name, bio}=req.body
     if (name && bio){
-        const newuser= db.createUser({
-            //get data from req data
-            name: req.body.name,
-            bio:req.body.bio
-        })
+        const newuser= db.createUser(req.body
+        //     {
+        //     //get data from req data
+        //     name: req.body.name,
+        //     bio:req.body.bio
+        // }
+        )
         res.status(201).json(newuser)
     } 
     else if (!post){

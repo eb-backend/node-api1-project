@@ -1,11 +1,17 @@
 const words= "some words of encouragement"
 
 let users =[
-{
-  id: "1", // hint: use the shortid npm package to generate it
-  name: "Jane Doe", // String, required
-  bio: "Not Tarzan's Wife, another Jane",  // String, required
-}
+    {
+        name: 'Brainey',
+        age: 200,
+        height: '5cm',
+        id: 0
+      }
+// {
+//   id: "1", // hint: use the shortid npm package to generate it
+//   name: "Jane Doe", // String, required
+//   bio: "Not Tarzan's Wife, another Jane",  // String, required
+// }
 ]
 
 function getusers(){
