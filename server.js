@@ -3,6 +3,7 @@
 //this is pulling the dependencay from "node modules"
 const express = require("express")
 const db= require("./database")
+const cors=require("cors")
 
 const server= express() //adds routing, allows for json format
 
